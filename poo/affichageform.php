@@ -1,0 +1,33 @@
+<?php
+    require"form.php";
+    $forminscription = new Form($_POST);
+?>
+
+<form action="#" method="POST">
+
+<?php
+    echo $forminscription->input('username');
+    echo $forminscription->input('nom');
+    echo $forminscription->input('prenom');
+    echo $forminscription->inputPS('password');
+    echo $forminscription->submit();
+
+
+?>
+
+</form>
+
+<?php /*ICI MON CODE*/
+    $forminscription = new Form();
+?>
+
+<form action="#" method="POST">
+
+<?php
+    echo $forminscription->input('pseudo');
+    echo $forminscription->input('password');
+    echo $forminscription->submit();
+
+
+?>
+
